@@ -1,0 +1,36 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+.hero-section {
+    background: url('../images/home_page.jpg') no-repeat center center/cover;
+}
+
+.overlay {
+    background: rgba(13, 39, 65, 0.7); 
+}
+
+#projects,
+#mission{
+    margin-top: 50px;
+}
+#success{
+    margin: 100px 0;
+    background-color: #e3f2fd;;
+    color: #fff!important;
+}
+
+.card-body{
+    padding: 20px;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f8f9fa;
+    transition: 0.3s;
+}
+.feature-box:hover {
+    background: #e3f2fd;
+    transform: translateY(-2px);
+}

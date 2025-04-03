@@ -1,0 +1,7 @@
+.hero-section {
+    background: url('https://images.unsplash.com/photo-1513836279014-a89f7a76ae86') no-repeat center center/cover;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6); 
+}

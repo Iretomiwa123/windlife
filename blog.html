@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windlife Environmental Support</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/android-chrome-512x512.png" type="image/x-icon">
+    
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Comic+Neue:wght@300;400;700&family=Merriweather:wght@300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo.png" alt="Windlife Logo" max-height="60" width="60"> 
+               <span class="bold"> Windlife </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link btn1 btn-custom px-3" href="donate.html">Donate</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="hero-section">
+        <div class="overlay"></div>
+        <div class="hero-content container">
+            <h1>Our Blog</h1>
+            <p>Insights, stories, and updates from our environmental journey</p>
+        </div>
+    </div>
+
+    <section class="bg-white py-5">
+        <div class="container">
+            <!-- Search and Categories -->
+            <div class="mb-4 d-flex flex-column flex-sm-row justify-content-between align-items-start">
+                <div class="relative mb-4 mb-sm-0">
+                    <input type="text" class="form-control ps-5" placeholder="Search articles..." id="search">
+                    <i class="fas fa-search position-absolute top-50 start-0 translate-middle-y ms-2 text-muted"></i>
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                    <button class="btn2" onclick="filterPosts('All')">All</button>
+                    <button class="btn2" onclick="filterPosts('Conservation')">Conservation</button>
+                    <button class="btn2" onclick="filterPosts('Resources')">Resources</button>
+                    <button class="btn2" onclick="filterPosts('Lifestyle')">Lifestyle</button>
+                    <button class="btn2" onclick="filterPosts('Community')">Community</button>
+                </div>
+            </div>
+
+            <!-- Featured Post -->
+            <div id="featured-post" class="mb-5">
+                <!-- Featured content will be inserted here dynamically -->
+            </div>
+
+            <!-- Regular Posts Grid -->
+            <div id="regular-posts" class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <!-- Regular content will be inserted here dynamically -->
+            </div>
+
+            <!-- No Posts Message -->
+            <div id="no-posts-message" class="text-center" style="display: none;">
+                <p>No articles found in this category.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section text-center">
+        <div class="cta-overlay"></div>
+        <div class="container cta-content">
+            <h2>Join Us in Making a Difference</h2>
+            <p >Whether you volunteer, donate, or spread awareness, your support helps create a sustainable future for our planet.</p>
+            <div class="mt-4">
+                <a href="/support" class="btn1 btn-donate me-3 px-4 py-2">Donate Now</a>
+                <a href="https://wa.me/+2348160876081?text=Hello, I'm interested in volunteering with Windlife Environmental Support Initiative." 
+                  class="btn btn-whatsapp btn-outline-light px-4 py-2">
+                    Contact via WhatsApp <i class="fab fa-whatsapp ms-2"></i>
+                </a>
+            </div>
+        </div>
+      </section>
+    
+      <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Logo and Description -->
+                <div class="col-md-4">
+                    <a class="navbar-brand d-flex align-items-center mb-3" href="index.html">
+                        <img src="images/logo.png" alt="Windlife Logo" max-height="60" width="60"> 
+                       <span class="bolda"> Windlife </span>
+                    </a>
+                    <p>Supporting environmental sustainability and conservation efforts worldwide through community action and education.</p>
+                    <div>
+                        <a href="#" class="foot me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="foot me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="foot"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="col-md-2 one">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="">Home</a></li>
+                        <li><a href="about.html" class="">About</a></li>
+                        <li><a href="project.html" class="">Projects</a></li>
+                        <li><a href="blog.html" class="">Blog</a></li>
+                        <li><a href="donate.html" class="">Support</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="col-md-3 one">
+                    <h5>Contact Us</h5>
+                    <p>3, Alh Basiru Street, Ajao Estate, Lagos State.</p>
+                    <p>+234 8137208847</p>
+                    <p><a href="mailto:thewindlifeadvocacy@gmail.com" class="white fw-bold">Thewindlifeadvocacy@gmail.com</a></p>
+                </div>
+                
+                <!-- Newsletter -->
+                <div class="col-md-3">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to our newsletter for updates on our initiatives and news.</p>
+                    <form>
+                        <div class="mb-2">
+                            <input type="email" class="form-control" placeholder="Your email address" required>
+                        </div>
+                        <button type="submit" class="btn1 w-100">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center mt-4 border-top pt-3">
+                <p class="mb-0">&copy; 2025 Windlife Environmental Support Initiative. All rights reserved.</p>
+            </div>
+        </div>
+      </footer>
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/blog.js"></script>
+    </body>
+    </html>
+    

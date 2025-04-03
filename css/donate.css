@@ -1,0 +1,19 @@
+.hero-section {
+    background: url('https://images.unsplash.com/photo-1500673922987-e212871fec22') no-repeat center center/cover;
+}
+
+.overlay {
+    background: rgba(134, 227, 181, 0.5); 
+}
+
+.nav-pills .nav-link {
+    background-color: transparent;
+    border:1px solid #e07b00 !important;
+    color: #e07b00 !important;
+    margin-right: 10px;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #FF8C00 !important;
+    color: #ffffff !important;
+}
