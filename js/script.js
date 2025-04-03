@@ -16,6 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
             image: "https://images.unsplash.com/photo-1518495973542-4542c06a5843?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
             category: "Ocean Protection",
             location: "Global",
+        },
+        {
+            id: 3,
+            title: "Lagos Climate Hub",
+            description: "Creating an awareness for the children about the climate and teaching them about Climate preservation and maintainance.",
+            image: "https://images.unsplash.com/photo-1500673922987-e212871fec22",
+            category: "Climate Protection",
+            location: "Nigeria",
         }
     ];
 

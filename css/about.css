@@ -27,21 +27,13 @@ body {
     padding: 0;
 }
 
-.over {
-    -ms-overflow-style: none;   
-}
 
 .over {
-    display: flex;
-    flex-wrap: nowrap; 
-    gap: 20px;
-    overflow-x: scroll;
+    /* gap: 10px; */
     padding-bottom: 10px; 
 }
 
-.card {
-    flex: 0 0 auto; 
-    width: 300px; 
+.card { 
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -68,7 +60,6 @@ body {
     font-weight: 500;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .row {
         gap: 15px;
